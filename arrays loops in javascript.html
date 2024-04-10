@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Lorem ipsum dolor sit.
+    <script>
+        let num=[11, 12, 13, 14, 15]
+        for(let i=0; i<num.length; i++){
+            console.log(num[i])
+        }
+
+        //for each loop
+        num.forEach((element)=>{ 
+            console.log(element*element)
+        })
+
+        // Array.from (for converting the objects/collectins/string to n array)
+        let name = "sourav"               
+        let arr = Array. from(name)
+        console.log(arr)
+
+        //for...of loop  (for returns the element of an array)
+        for (let i of num){
+            console.log(i)
+        }
+
+        // for...in loops (returns the key value)
+        for(let i in num){
+            console.log(i)
+        }
+
+        //array map method (it creates a new array)
+        let newnum = [21, 12, 20]
+        let a = newnum.map((value, index, array)=>{
+            console.log(value, index, array)
+            return value + 1    // it also returns values
+        })
+        console.log(a)
+
+        //array filter method (for filtering the value)
+        let newnum2 = [21, 12, 20, 0, 2, 11]
+        let b = newnum2.filter((b)=>{
+            return b>10
+        })
+        console.log(b)
+
+        //array reduce method
+        let newarray = newnum.reduce((s1, s2)=>{
+            return s1 + s2
+        })
+        console.log(newarray)
+    </script>
+</body>
+</html>
