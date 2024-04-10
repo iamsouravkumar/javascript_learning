@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Lorem ipsum dolor sit amet.
+    <script>
+        let num = Math.random() * 100;
+        let a;
+        a = Number.parseInt(a)
+        let score = 100
+        while(a != num){
+            score = score - 1;
+            a = prompt("enter a number");
+        }
+        if (a < num) {
+            console.log("this number is lesser than the random number")
+        }
+        else if (a > num) {
+            console.log("this number is greater than the random number")
+        }
+        else{
+            console.log("congratulations! you guess the correct number")
+            console.log("you guess the actual number in $ {100 - score} chances")
+        }
+    </script>
+</body>
+
+</html>
