@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Lorem ipsum dolor sit amet.
+    <script>
+        let num = [45, 55, 62, 87, 32]
+        let a = num.toString() // a is now a string
+        console.log(a, typeof a)
+        let b = num.join("and")
+        console.log(b, typeof b)
+        let c = num.pop() // pop returnd the pop element
+        console.log(num, c)
+        let d = num.push(46) // push returns the new array length
+        console.log(num, d)
+        let e = num.shift() // removes the element from the start ofan array
+        console.log(e, num)
+        let f = num.unshift(40) //adds an element at the start of an array 
+        console.log(f, num)
+        delete num[1] // delete an array element but does not affects the array length
+        console.log(num)
+        let num2 = [10, 20, 30, 40, 50]
+        let newarray = num.concat(num2) //to joint an array
+        console.log(newarray)
+        let num3 = [22, 66, 44, 88, 33, 11]
+        num3.sort() // for sorting the elements
+        console.log(num3)
+        let compare = (a, b)=>{ //for alphabatically sorting the elements 
+            return a - b
+        }
+        num.sort(compare)
+        num3.reverse
+        console.log(num3)
+        num3.splice(2, 4, 0, 0, 0, 0)
+        console.log(num3)
+        let newnum = num3.slice(1, 4)
+        console.log(newnum)
+    </script>
+</body>
+</html>
