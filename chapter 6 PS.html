@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>
+Practise Set.
+</h1>
+Your age is : 
+<script>
+    //Q1=write a program using prompt function to take input of age as a value from the user and use alert to tell him if he can drive.
+    let age = prompt("enter your age", "18");
+    age = Number.parseInt(age);
+    if(age < 18){
+        alert("you cannto drive because you are under 18.")
+        document.write(age)
+    }
+    else if(age < 0){
+        console.error("you entered an incorrect age")
+        document.write(age)
+        
+    }
+    else{
+        alert("you can drive as you are above 18")
+        document.write(age)
+}
+
+//Q2=in q1 use confirm to ask the user if he wants to see the propt again.
+
+// Q4=write a program to change the url to google.com (redirection) if users enters a no. greater than 4.
+let num = prompt("enter a number");
+num = Number.parseInt(num);
+if(num>4){
+    location.href = "https://www.google.com"
+}
+
+//Q5= change thebackground color as per the user prompt.
+let color = prompt("enter your color which you want to see")
+document.body.style.background = color;
+ 
+</script>
+</body>
+</html>
