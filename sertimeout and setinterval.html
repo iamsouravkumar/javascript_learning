@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setimeout and setinterval</title>
+</head>
+<body>
+    <script>
+        const sum = (a,b,c)=>{
+            console.log("yes, i am running " + (a+b+c));
+            a+b+c
+        }
+        setTimeout(sum, 3000, 10,10,10)
+
+    //     setInterval(function(){
+    // alert("setinterval");
+    // }, 3000)
+//         document.write("hello");
+//         let a = setTimeout(function(){
+// alert("i am inside of settimeout")
+//         }, 5000)
+//         let b = prompt("do you want to run the set-timeout");
+//         if ("n" == b){
+//             clearTimeout(a)
+//         }
+//         console.log(a);
+    </script>
+</body>
+</html>
