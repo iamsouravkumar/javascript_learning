@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Hire me</li>
+            <div class="container">
+                <p>hey, i am a good boy.</p>
+            </div>
+        </ul>
+    </nav>
+    <script>
+        const changeBgRed = () => {
+            document.body.firstElementChild.style.background = "red"
+        }
+
+        let b = document.body
+        console.log("First child of b is: ", b.firstChild)
+        console.log("First Element child of b is: ", b.firstElementChild)
+    </script>
+</body>
+
+</html>
