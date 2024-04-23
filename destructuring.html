@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Destructuring.
+    <script>
+        let arr =[2,4,6,8,10,12]
+        // let a = arr[0]
+        // let b = arr[1] no need to do this.
+        // let [a,b,c,d,...rest] = arr
+        console.log(a,b,c,d,...rest);
+        let [e, ,f,...rest] = arr
+        console.log(e,f,...rest);
+
+        let {a, b}={a:1, b:2}
+        console.log(a,b);
+
+        //spread operator
+
+        let arr1 = [10,20,30]
+        let obj1= {...arr1}
+        console.log(obj);
+
+        function sum(v1,v2,v3){
+            return v1 + v2 + v3
+        }
+        console.log(sum(...arr1));
+
+        let obj2={
+            name: "sourav",
+            company:"xyz",
+            address:"ABC"
+        }
+        console.log({...obj2, name: "kumar", company: "COMP"});
+    </script>
+</body>
+</html>
